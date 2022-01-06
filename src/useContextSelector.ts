@@ -43,7 +43,7 @@ export function useContextSelector<T, TSelected>(
         latestSelector.current && latestSelector.current(nextValue);
 
       if (newSelectedState !== latestSelectedState.current) {
-        forceUpdate({});
+        forceUpdate();
       }
     };
 
